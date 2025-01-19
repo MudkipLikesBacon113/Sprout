@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-image: url("SproutBg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .TitleDiv {
+        margin: 20px 0;
+    }
+
+    .GridDiv {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 5px; /* Space between grid items */
+        margin-bottom: 20px;
+    }
+
+    .gridB {
+        width: 51px;
+        height: 51px;
+        background-image: url("Grid.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border: none;
+        background-color: transparent;
+        transition: transform 0.2s ease;
+    }
+
+    .gridB:hover {
+        transform: scale(1.1);
+    }
+
+    /* Special seed slot style */
+    .seedSlot {
+        background-image: url("Grid.png"); /* Use a different image or style */
+        background-color: transparent; /* Optional for transparency */
+        border:none;
+    }
+
+    .seedSlot:hover {
+        transform: scale(1.1);
+    }
+
+    .menu {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: rgb(85, 189, 44);
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="TitleDiv">
+    <img src="sproutLogo.png" height="100" width="220" alt="Sprout Logo"> 
+  </div>
+  <div class="GridDiv">
+    <!-- Row 1 -->
+    <button class="gridB" onclick="showMenu()"></button>
+    <button class="gridB" onclick="showMenu()"></button>
+    <button class="gridB" onclick="showMenu()"></button>
+    <!-- Row 2 -->
+    <button class="gridB" onclick="showMenu()"></button>
+    <button class="gridB" onclick="showMenu()"></button>
+    <button class="gridB" onclick="showMenu()"></button>
+    <!-- Row 3 -->
+    <button class="gridB" onclick="showMenu()"></button>
+    <button class="seedSlot"onclick="showMenu()"></button> <!-- The special bottom-middle button -->
+    <button class="gridB"onclick="showMenu()"></button>
+  </div>
+</body>
+</html>
+
+<script>
+
+</script>
+
